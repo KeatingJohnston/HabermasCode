@@ -1,10 +1,84 @@
-div.left {
+html, html * {
+    box-sizing: border-box;
+}
+
+code {
+    padding: 2px;
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 2px;
+}
+article {
+    background-color: rgba(80,80,80,0.2);
+    min-height: 100vh;
+    display: grid;
+    margin: 15px;
+    /* grid-template-areas: "nav nav nav" */
+    /*                      "side art aside" */
+    /*                      "side art aside"; */
+    // grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-gap: 10px;
+}
+
+article>* {
+    border: orange solid 1px;   /*sorry for the horrible color*/
+    border-radius: 10px;
+    // text-align: center;         /*keep the text centered horizontally*/
+    
+}
+
+section.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.main>* {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 1.2rem;
+
+}
+section.main>section>img {
     float: left;
-    width: 50%;
-    margin:0%;
+    width: 25%;
+    margin-right: 8px;
+    
 }
-div.right {
-    float:left;
-    width: 50%;
-    margin: 0%;
+header {
+    background-color: rgba(70,0,0,0.1);
 }
+
+section.main {
+    background-color: rgba(0,70,0,0.1);
+}
+footer {
+    background-color: rgba(0,0,70,0.1);
+}
+
+.special {
+    background-color: rgba(80,40,110,0.3);
+}
+
+aside {
+    background-color: rgba(143, 81, 188, 0.3);
+    grid-area: aside;
+}
+
+/* div.left { */
+/*     float: left; */
+/*     width: 50%; */
+/*     margin:0%; */
+/* } */
+
+/* div.right { */
+/*     float:left; */
+/*     width: 50%; */
+/*     margin: 0%; */
+/* } */
+
+r
